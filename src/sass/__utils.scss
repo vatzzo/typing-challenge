@@ -1,0 +1,28 @@
+// Variables
+
+$color-pri: #ff3672;
+$color-pri-light: #fc6773;
+$color-sec: rgb(65, 233, 107);
+$color-black: rgb(50,50,50);
+$color-white: rgb(248, 248, 248);
+
+// Mixins
+@mixin res($breakpoint) {
+    @if $breakpoint == mobile {
+      @media (max-width: 600px) {
+        @content;
+      }
+    } @else if $breakpoint == vtab {
+      @media (max-width: 900px) {
+        @content;
+      }
+    } @else if $breakpoint == htab {
+      @media (max-width: 1200px) {
+        @content;
+      }
+    } @else if breakpoint == desktop {
+      @media (min-width: 1800px) {
+        @content;
+      }
+    }
+  }

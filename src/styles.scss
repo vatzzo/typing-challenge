@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+@import './sass/_utils';
+
+*,
+*::after,
+*:before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+    @include res(htab) {
+        font-size: 57.5%;
+    }
+
+    @include res(vtab) {
+        font-size: 52.5%;
+    }
+
+    @include res(mobile) {
+        font-size: 47.5%;
+    }
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 3rem;
+}
