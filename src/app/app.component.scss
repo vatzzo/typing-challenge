@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $color-white;
+    background: linear-gradient(to right bottom, rgba($color-black, 0.5), rgba($color-black, 0.8));
 
     font-size: 1.6rem;
 }
@@ -18,7 +18,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: rgba($color-black, 0.1);
+    background-color: rgba($color-white, 0.8);
     box-shadow: 0.5rem 0.5rem 1rem 0.3rem rgba($color-black, 0.2);
     border-radius: 8px;
     border-bottom: solid 0.5rem $color-black;
